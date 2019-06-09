@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Wake County Restaurants</title>
+        <!--load JS library for displaying map-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+              integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+                integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+                crossorigin=""></script>
+        
+        <link rel="stylesheet" href="wcres.css">
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    </head>
+
+    <body>
+        <header>Wake County Restaurants</header>
+
+        <!--filter settings, the default selection is all-->
+        <div class="content-wrap">
+            <section id="controls">
+                <h1>Set cities you would like to explore for your next taste!</h1>
+                City: <select id="city"></select>
+                <button id="findRestaurants">Find Restaurants</button>
+            </section>
+
+            <!--Restaurants list and map-->
+            <div class="table-map-container">
+                <h2>Restaurants List</h2>
+                <h4>* Click Restaurant Name to get location | Scroll the table to see more restaurants.</h4>
+                <div id="results">
+                    <section id="rstList"></section>
+                    <div id="map-container">
+                        <!--add title here-->
+                        <!--add map here-->
+                        <!--add location here-->
+                        <!--add phone number here-->
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!--Type components chart and time trends-->
+            <section class="charts-container">
+                <h2>Restaurants Components and Opening Trends in This City</h2>
+                <div id="charts-group">
+                    <!-- typeChart here -->
+                    <!-- yearChart here -->
+                </div>
+            </section>
+        </div>
+
+        <script src="requireData.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
